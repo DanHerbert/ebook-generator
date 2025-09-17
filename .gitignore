@@ -1,0 +1,9 @@
+/venv
+/build
+/src/ebook_generator.egg-info
+/out_epub
+/book.epub
+/inputs/metadata.yaml
+/inputs/content.html
+/inputs/*.jpg
+/inputs/*.base64
