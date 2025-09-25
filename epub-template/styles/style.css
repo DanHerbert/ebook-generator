@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Jost*", "Jost* Book";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/Jost-400-Book.otf") format("otf");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/Merriweather-400-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/LibreBaskerville-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Libre Baskerville Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("../fonts/LibreBaskerville-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/LibreBaskerville-Italic.otf") format("otf");
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 700;
+  font-display: block;
+  src: url("../fonts/LibreBaskerville-BoldItalic.otf") format("otf");
+}
+body {
+  font-family: Libre Baskerville, Palatino, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  page-break-inside: avoid;
+  font-kerning: auto;
+}
+p {
+  margin-bottom: 0;
+  text-indent: 0;
+  margin-top: 0;
+  text-align: justify;
+}
+blockquote {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+}
+blockquote.verse {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+p.blockquote-content-verse {
+  padding-left: 1.5em;
+  margin-top: 0;
+  text-indent: -1.5em;
+}
+ul,
+ol {
+  padding-left: 1.5em;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  margin-left: 0.05em;
+  line-height: 1;
+}
+p,
+li {
+  hyphens: auto;
+  adobe-hyphenate: auto;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-after: 4;
+  -webkit-hyphenate-limit-before: 4;
+}
+hr {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+li {
+  text-align: left;
+}
+a {
+  text-decoration: underline;
+}
+a.link-contains-image {
+  text-decoration: none !important;
+}
+.text-is-url {
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+  word-wrap: break-word;
+}
+.smallcaps {
+  font-variant-numeric: normal;
+  font-variant: small-caps;
+  font-variant-alternates: normal;
+  font-variant-position: normal;
+  font-variant-east-asian: normal;
+  letter-spacing: 0.04em;
+  font-variant-ligatures: none;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.monospace {
+  font-family: monospace;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.subsq {
+  text-indent: 1.5em;
+}
+.basic-break {
+  margin-top: 1.4em;
+  margin-bottom: 0;
+  height: 0;
+}
+.title-page-title-block {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+.title-page-title-block,
+.copyright-page-title-block,
+.title-page-contributor-block,
+.copyright-page-contributor-block,
+.copyright-page-contributor-secondary {
+  text-align: center;
+}
+.title-page-title {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  font-family: Merriweather, serif;
+  font-size: 48px;
+  padding: 0 25px 5px;
+}
+.title-page-subtitle,
+.title-page-subtitle-2,
+.copyright-page-subtitle,
+.copyright-page-subtitle-2 {
+  font-family: Merriweather, serif;
+  font-size:18px;
+  font-style: italic;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.title-page-subtitle-2,
+.copyright-page-subtitle-2 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 35px;
+}
+.title-page-contributor {
+  font-size:18px;
+  margin-bottom: 60px;
+}
+.title-page-contributor-publisher {
+  font-size:14px;
+}
+.copyright-page-title-block {
+  margin-bottom: 140px;
+  margin-top: 70px;
+}
+.copyright-page-title {
+  border-bottom-color: transparent;
+  font-family: Merriweather, serif;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 0 27px 5px;
+}
+.copyright-page-subtitle,
+.copyright-page-subtitle-2,
+.copyright-page-contributor {
+  font-style: normal;
+  font-weight: normal;
+}
+.copyright-page-contributor {
+  font-size: 18px;
+}
+.copyright-page-contributor-secondary {
+  margin-top: 20px;
+}
+.chapter-heading {
+  margin: 170px 4% 50px;
+  text-align: center;
+}
+.chapter-heading-title {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  font-family: 'Jost*', sans-serif;
+  font-weight: 400;
+  padding: 0 15px 5px;
+}

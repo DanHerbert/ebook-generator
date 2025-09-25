@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="$language_code">
+  <head>
+    <meta name="dtb:uid" content="032ca4c0-4e13-4cf2-b028-a5d66a98ed4d"/>
+    <meta name="dtb:depth" content="2"/>
+  </head>
+  <docTitle>
+    <text>$full_title</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="np-cover" playOrder="1">
+      <navLabel>
+        <text>Cover Page</text>
+      </navLabel>
+      <content src="page-cover.xhtml" />
+    </navPoint>
+    <navPoint id="np-title" playOrder="2">
+      <navLabel>
+        <text>Title Page</text>
+      </navLabel>
+      <content src="page-title.xhtml" />
+    </navPoint>
+    <navPoint id="np-copyright" playOrder="3">
+      <navLabel>
+        <text>Copyright</text>
+      </navLabel>
+      <content src="page-copyright.xhtml" />
+    </navPoint>
+    $chapter_navpoints
+  </navMap>
+</ncx>

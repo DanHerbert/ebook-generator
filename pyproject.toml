@@ -1,0 +1,18 @@
+[project]
+version = "1.0.0"
+name = "ebook-generator"
+description = "Ebook generator for patreon preview chapters"
+authors = [{name = "Dan Herbert", email = "ebg-dan@hrbrt.co"}]
+readme = "README.md"
+license = "BSD-0-Clause"
+license-files = ["LICENSE.txt"]
+dependencies = [
+  "pyyaml==6.0.*",
+]
+classifiers = [
+  "Development Status :: 5 - stable",
+  "Intended Audience :: End Users/Desktop",
+]
+
+[project.urls]
+repository = "https://github.com/DanHerbert/ebook-generator"
