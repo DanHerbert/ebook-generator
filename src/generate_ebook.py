@@ -71,22 +71,26 @@ def parse_book_contents(metadata):
 
     filename = "chapter-template.xhtml"
     in_path = real_join(EPUB_TEMPLATE_PATH, filename)
+    real_chapters = 0
 
-    for i, chapter_content in enumerate(chapter_parts, start=1):
+    for chapter_content in chapter_parts:
+        chapter_content = chapter_content.replace("&nbsp;", chr(0x00A0))
+        if len(chapter_content.strip()) == 0:
+            continue
+        real_chapters += 1
         with open(in_path, "r", encoding="utf-8") as f:
             chapter_tmpl = Template(f.read())
-        chapter_content = chapter_content.replace("&nbsp;", chr(0x00A0))
         out_str = chapter_tmpl.substitute(
             **metadata,
-            chapter_number_padded=f"{i:03}",
-            chapter_number=i,
+            chapter_number_padded=f"{real_chapters:03}",
+            chapter_number=real_chapters,
             chapter_content=chapter_content,
         )
-        out_path = real_join(OUTPUT_PATH, f"chapter-{i:03}.xhtml")
+        out_path = real_join(OUTPUT_PATH, f"chapter-{real_chapters:03}.xhtml")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(out_str)
         print(f"Wrote {out_path.replace(PROJECT_PATH, '.')}")
-    return len(chapter_parts)
+    return real_chapters
 
 
 def generate_metadata_opf(metadata, chapter_count):
