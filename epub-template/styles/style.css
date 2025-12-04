@@ -155,6 +155,11 @@ a.link-contains-image {
 .subsq {
   text-indent: 1.5em;
 }
+.section-break {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
 .basic-break {
   margin-top: 1.4em;
   margin-bottom: 0;
