@@ -65,7 +65,11 @@ p {
 .chapter-content p:first-of-type {
   text-indent: 0;
 }
-.chapter-content p:first-of-type::first-letter {
+/* Do not style the first letter if the paragraph has custom styles. If custom
+ * styles are present, it could lead to weird layout issues so it's cleaner to
+ * not apply any styles in this scenario.
+ */
+.chapter-content p:first-of-type:not(p[style])::first-letter {
   float: left;
   font-size: 2.5em;
   margin-right: .08em;
