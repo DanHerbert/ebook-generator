@@ -79,6 +79,7 @@ def parse_book_contents(metadata):
             r"<p><em>\s*</em>\s*\*</p>",
             '<p class="section-break">*</p>',
             chapter_content,
+            flags=re.IGNORECASE,
         )
         if len(chapter_content.strip()) == 0:
             continue
