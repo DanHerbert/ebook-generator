@@ -75,6 +75,11 @@ def parse_book_contents(metadata):
 
     for chapter_content in chapter_parts:
         chapter_content = chapter_content.replace("&nbsp;", chr(0x00A0))
+        chapter_content = re.sub(
+            r"<p><em>\s*</em>\s*\*</p>",
+            '<p class="section-break">*</p>',
+            chapter_content,
+        )
         if len(chapter_content.strip()) == 0:
             continue
         real_chapters += 1
