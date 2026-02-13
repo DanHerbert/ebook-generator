@@ -6,4 +6,5 @@
 /inputs/*.yaml
 /inputs/*.html
 /inputs/*.jpg
+/inputs/*.png
 /inputs/*.base64
