@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <svg
-      width="100mm"
-      height="160mm"
-      viewBox="0 0 625 1000"
+      width="750px"
+      height="1000px"
+      viewBox="0 0 750 1000"
       version="1.1"
       id="cover-art"
       xmlns="http://www.w3.org/2000/svg"
@@ -11,21 +11,16 @@
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:cc="http://creativecommons.org/ns#">
   <defs>
-    <pattern id="cover-image" patternUnits="userSpaceOnUse" width="625" height="1000">
-      <image x="0" y="0" width="625" height="1000" href="$coverart_base64" />
-    </pattern>
   </defs>
   <style>
-      @font-face {
-        font-family: 'Jost*';
-        font-style: normal;
-        font-weight: 800;
-        font-display: block;
-        src: url('./epub-template/fonts/Jost-800-Hevy.otf') format('otf');
+      .cover-art-elements {
+        height: 1000px;
+        width: 750px;
       }
 
-      .cover-image-box {
-        fill: url(#cover-image)
+      .cover-image {
+        width: 750px;
+        height: 1000px;
       }
 
       .middle-aligned {
@@ -43,9 +38,9 @@
   </style>
 
   <g id="cover-art-elements" class="cover-art-elements">
-      <rect id="cover-image-box" class="cover-image-box" width="625" height="1000" x="0" y="0" />
+      <image class="cover-image" x="0" y="0" height="1000" width="750" href="$coverart_base64" />
       <text id="preview-label" class="preview-label middle-aligned">
-        <tspan x="310" y="300">$preview_label</tspan>
+        <tspan x="380" y="800">$preview_label</tspan>
       </text>
   </g>
   <metadata id="cover-metadata">

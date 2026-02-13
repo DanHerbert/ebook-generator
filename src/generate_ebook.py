@@ -47,7 +47,7 @@ def generate_cover_jpg(metadata):
     png_path = real_join(OUTPUT_PATH, "cover.png")
     jpg_path = real_join(OUTPUT_PATH, "cover.jpg")
     cmd_args = shlex.split(
-        f"rsvg-convert -h 1500 -w 938 --format png --output {png_path} {svg_path}"
+        f"rsvg-convert -h 1000 -w 750 --format png --output {png_path} {svg_path}"
     )
     subprocess.run(cmd_args)
     subprocess.run(shlex.split(f"magick {png_path} {jpg_path}"))
